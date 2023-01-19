@@ -2,10 +2,12 @@ class CodersArray {
   length;
 
   constructor(...elements) {
-    for (let i = 0; i < elements.length; i++) {
-      this.i = elements;
-      this.length = elements.length;
+    let index = 0;
+    for (const element of elements) {
+      this[index] = element;
+      index++;
     }
+    this.length = index;
   }
 }
 
